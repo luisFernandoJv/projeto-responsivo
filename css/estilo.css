@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+:root{
+    --primary-color:#612674;
+    --default-gap: 1rem;
+}
+
+.maxwidth{
+    width: 70.5em;
+    margin: auto;
+}
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: "Oxygen", sans-serif;
+}
+
+.container-header{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+            
+}
+.logo{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+.navegador{
+   background-color:var(--primary-color);
+   font-size: 1em;
+           
+}
+.navegador ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+.navegador a{
+
+   text-decoration: none;
+   color: white;
+   display: block;
+   padding: 1em;
+        
+}
+.container-heroBanner{
+    text-align: center;
+    padding: 1em;
+    background-color: #f6f6f6;
+    margin: auto;
+
+}
+.hero-title{
+    padding: .5em;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+.hero-subtitle{
+    padding: 0.5em;
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white 30%);
+
+}
+
+.btn-hero{
+    background-color: #58c4c4;
+    text-decoration: none;
+    padding: .9em 2.5em;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.navegador li:hover{
+    background-color:color-mix(in srgb, var(--primary-color), white 10%);
+}
+.hero-logo {
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+.hero-logo:hover{
+    color: red;
+}
+.hero-logo img{
+   width: 100%s;
+}
+.container_heroBanner-imagem{
+    display: none;
+}
+.container-menu a{
+    color: inherit;
+    text-decoration: none;
+}
+.container-menu{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 2em;
+}
+.tiltle-col{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+.icon{
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+.icons{
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+.icons:hover{
+    color: #f2f1f5;
+}
+
+p{
+    line-height: 1.5;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+    
+}
+.col-sm-12{
+    width: 100%;
+}
+.container-cards{
+    padding: 2em;
+    background-color: #f6f6f6;
+    
+}
+.container-cards p{
+    line-height: 1.2;
+}
+.card-title{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 1.25em;
+    letter-spacing: .2em;
+ 
+}
+.container-cards .row{
+    row-gap: 4em;
+}
+
+.card-imagem img{
+    width: 100%;
+}
+.icon:hover{
+    color: color-mix(in srgb, var(--primary-color), white 20%);
+}
+
+.rodape{
+    padding: 2em;
+    background-color: #35303e;
+    color: #83969f;
+    text-align: center;
+}
+.container-footer {
+    padding: 2em;
+    color: white;
+}
+
+@media screen and (min-width:48.75em){
+    .container-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .logo{
+        margin-left: 1.5em;
+    }
+    .navegador{
+        background-color: initial;
+    }
+
+    .navegador li{
+        display: inline-block;
+      
+
+    }
+    .container-heroBanner a{
+        width: 10%;
+        margin: auto;
+    }
+    .navegador a{
+        color: var(--primary-color);
+        padding: 1em;
+        text-decoration: none;
+    }
+
+    .navegador a:hover{
+        background-color: color-mix(in srgb, var(--primary-color), white 85%);
+    }
+   .container-heroBanner{
+    background-color: var(--primary-color);
+   }
+    .container_heroBanner-imagem{
+        width: 10%;
+        height: 10%;
+        margin: auto;
+        display: block;
+        padding: 1em;
+
+    }
+    .hero-title{
+        color: white;
+    }
+
+    .col-md-6{
+        width: calc(50% - var(--default-gap));
+       
+    }
+    .card_new{
+        display: flex;
+        flex-direction: row;
+        gap: var(--default-gap);
+    }
+    .card-imagem img{
+        max-height: 382px;
+    }
+    .card-imagem{
+        flex: 0 0 25%;
+    }
+    .card-text{
+        flex-grow: 1;
+    }
+    
+    
+}
+
+@media screen and (min-width:56.5em) {
+
+    .container-heroBanner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio:1198 / 670 ;
+
+        display: flex;
+    
+        justify-content: center; 
+        align-items: flex-end;
+    }
+    .container-heroBanner .maxWidth{
+        margin: initial;
+        margin-bottom: 4em;
+        width: 90%;
+    }
+    .col-xl-3{
+        width: calc(25% - var(--default-gap));
+    }
+    .card-title{
+        margin-top: 0;
+    }
+
+    
+}
+
+@media screen and (min-width:74em) {
+    .container-heroBanner{
+        background-image: linear-gradient(transparent, var(--primary-color)), url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        background-blend-mode: soft-light;
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+        max-height: 80%;
+        width: 100%;
+       
+        
+    }
+    .container-heroBanner .maxWidth{
+        width: 50%;
+    }
+    .container_heroBanner-imagem{
+        width: 7em;
+        height: 7em;
+    }
+    .hero-title, .hero-subtitle{
+        text-shadow: 4px 4px 2px rgba(0 0 0 / .8);
+    }
+    .col-xl-6{
+        width: calc(50% - var(--default-gap));
+    }
+   
+    
+}
